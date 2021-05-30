@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 
-  
 const Button = (props) => (
   <button onClick={props.handleClick}>
     {props.text}
@@ -48,6 +47,9 @@ const App = () => {
       <p>good{good}</p>
       <p>neutral{neutral}</p>
       <p>bad{bad}</p>
+      <p>all{good+neutral+bad}</p>
+      <p>average{good+neutral+bad/2}</p>
+      <p>positive{(good/2)*100}</p>
     </div>
 
   )
